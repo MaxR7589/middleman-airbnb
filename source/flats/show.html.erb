@@ -15,11 +15,10 @@
             <h1><%= flat.description %></h1>
             <p><%= flat.city_name %></p>
             <p class="rating">
+              <% stars = flat.rating.to_i %>
+              <% stars.times do %>
                 <i class="fa fa-star" style="color: #ffb400"></i>
-                <i class="fa fa-star" style="color: #ffb400"></i>
-                <i class="fa fa-star" style="color: #ffb400"></i>
-                <i class="fa fa-star" style="color: #ffb400"></i>
-                <i class="fa fa-star" style="color: #ffb400"></i>
+              <% end %>
             </p>
           </div>
         </div>
